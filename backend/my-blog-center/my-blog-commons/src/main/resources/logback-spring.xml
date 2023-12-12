@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <conversionRule conversionWord="clr"
+    converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+  <conversionRule conversionWord="wex"
+    converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+  <conversionRule conversionWord="wEx"
+    converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
+  <!-- 彩色日志格式 -->
+  <property name="CONSOLE_LOG_PATTERN"
+    value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+  <!--控制台输出-->
+  <appender name="stdout"
+    class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <springProfile name="dev">
+        <pattern>%d{yyyy-MM-dd-HH:mm:ss E} %level
+          [%thread]-%class[%line]: %msg%n
+        </pattern>
+      </springProfile>
+      <springProfile name="!dev">
+        <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
+      </springProfile>
+      <!--⽇志的编码格式-->
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+  <!--输出到文件-->
+  <appender name="allFile"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--TimeBasedRollingPolicy 基于时间的滚动策略-->
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!--⽇志⽂件的存储路径-->
+      <fileNamePattern>log/log-all-%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd-HH:mm:ss.SSS} %level [%thread]-
+        %class:%line>>%msg%n
+      </pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+  <!--输出到文件-错误日志级别-->
+  <appender name="errorFile"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--TimeBasedRollingPolicy 基于时间的滚动策略-->
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!--⽇志⽂件的存储路径-->
+      <fileNamePattern>log/log-error-%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd-HH:mm:ss.SSS} %level [%thread]-
+        %class:%line>>%msg%n
+      </pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>ERROR</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+  </appender>
+  <!--调用-->
+  <root level="info">
+    <appender-ref ref="stdout"/>
+    <appender-ref ref="allFile"/>
+    <appender-ref ref="errorFile"/>
+  </root>
+</configuration>

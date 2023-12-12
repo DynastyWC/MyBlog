@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyBlog.iml" filepath="$PROJECT_DIR$/.idea/MyBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/my-blog-center/my-blog-center.iml" filepath="$PROJECT_DIR$/backend/my-blog-center/my-blog-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/my-blog-center/my-blog-commons/my-blog-commons.iml" filepath="$PROJECT_DIR$/backend/my-blog-center/my-blog-commons/my-blog-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/my-blog-center/my-blog-gateway-9992/my-blog-gateway-9992.iml" filepath="$PROJECT_DIR$/backend/my-blog-center/my-blog-gateway-9992/my-blog-gateway-9992.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/my-blog-center/my-blog-user-9961/my-blog-user-9961.iml" filepath="$PROJECT_DIR$/backend/my-blog-center/my-blog-user-9961/my-blog-user-9961.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/my-blog-center/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/backend/my-blog-center/renren-generator/renren-generator.iml" />
+    </modules>
+  </component>
+</project>
