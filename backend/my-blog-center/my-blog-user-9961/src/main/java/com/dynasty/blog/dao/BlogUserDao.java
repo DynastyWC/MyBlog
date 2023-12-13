@@ -16,9 +16,16 @@ import org.apache.ibatis.annotations.Update;
 @Mapper
 public interface BlogUserDao extends BaseMapper<BlogUserEntity> {
 
+  //查询手机号是否被注册
   @Select("select * from blog_user where user_phone = #{userPhone}")
-  BlogUserEntity getByEmail(String userPhone);
+  BlogUserEntity getByPhone(String userPhone);
 
-      @Update("update blog_user set user_name = #{param1}, user_email = #{param2}, user_pwd = #{param3}, icon = #{param4},motto = #{param5} where user_id = #{param6}")
-      boolean updateInfo(@Param("param1") String userName, @Param("param2") String userEmail, @Param("param3") String userPwd, @Param("param4") String icon, @Param("param5") String motto, @Param("param6") Long userId);
+  //更新用户信息
+  @Update("update blog_user set user_name = #{param1}, user_email = #{param1},  motto = #{param3},icon = #{param4} where user_id = #{param5}")
+  boolean updateInfo(@Param("param1") String userName, @Param("param2") String userEmail,
+      @Param("param3") String motto, @Param("param4") String icon, @Param("param6") Long userId);
+
+  //更新用户密码
+  @Update("update blog_user set user_pwd = #{param1} where user_id = #{param2}")
+  boolean updatePwd(@Param("param1") String encodePwd, @Param("param2") Long userId);
 }

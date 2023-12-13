@@ -1,5 +1,6 @@
 package com.dynasty.blog.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dynasty.blog.DTO.UserDTO;
 import com.dynasty.blog.utils.JwtUtil;
@@ -9,7 +10,9 @@ import com.dynasty.blog.entity.BlogUserEntity;
 import com.dynasty.blog.service.BlogUserService;
 
 import com.dynasty.blog.utils.UserHolder;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 
@@ -17,37 +20,45 @@ import javax.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Service("blogUserService")
 public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity>
     implements BlogUserService {
-  @Resource private BlogUserDao blogUserDao;
-  @Resource private StringRedisTemplate stringRedisTemplate;
-/**
- * @author dynasty
- * @description 用户注册接口实现
- */
+
+  @Resource
+  private BlogUserDao blogUserDao;
+  @Resource
+  private StringRedisTemplate stringRedisTemplate;
+
+  /**
+   * @author dynasty
+   * @description 用户注册接口实现
+   */
   @Override
   public Boolean doregister(BlogUserEntity blogUser) {
+    String userPhone = blogUser.getUserPhone();
+    QueryWrapper<BlogUserEntity> Wrapper = new QueryWrapper<>();
+    Wrapper.eq("user_phone", userPhone);
+    if(count(Wrapper)!=0){
+      return false;
+    }
     String userPwd = blogUser.getUserPwd();
     // 将用户信息使用pwd工具类加密
     String encodePwd = PasswordEncoder.encode(userPwd);
     blogUser.setUserPwd(encodePwd);
     // 将用户信息写到数据库
     boolean saveFlag = save(blogUser);
-    // 写数据库成功后往redis缓存一份用户账号
     if (!saveFlag) {
       return false;
     }
     return true;
   }
 
-/**
- * @author dynasty
- * @description :用户登录逻辑实现
- */
+  /**
+   * @author dynasty
+   * @description :用户登录逻辑实现
+   */
 
   @Override
   public String dologin(String userPhone, String userPwd, HttpSession session) {
@@ -55,7 +66,7 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
       return "用户和密码不能为空！";
     }
     // 通过手机号去查用户信息
-    BlogUserEntity user = blogUserDao.getByEmail(userPhone);
+    BlogUserEntity user = blogUserDao.getByPhone(userPhone);
     // 如果用户信息不存在返回false
     if (user == null) {
       return "用户不存在";
@@ -80,26 +91,42 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     log.info("token:{}", token);
     return token;
   }
-
+/**
+ * @param userInfo
+ * @return boolean
+ * @description 更新用户信息
+ */
   @Override
-  public boolean updateInfo(BlogUserEntity blogUser) {
-    UserDTO user = UserHolder.getUser();
-    Long userId = user.getUserId();
-    log.info("blogUser: {}", blogUser);
-    log.info("userId: {}", userId);
-
+  public boolean updateInfo(Map<String,String> userInfo) {
+    log.info("userInfoList:{}", userInfo);
     try {
-      String userName = blogUser.getUserName();
-      String userEmail = blogUser.getUserEmail();
-      String password = blogUser.getUserPwd();
-      String userPwd = PasswordEncoder.encode(password);
-      String icon = blogUser.getIcon();
-      String motto = blogUser.getMotto();
-      return blogUserDao.updateInfo(userName, userEmail, userPwd, icon, motto, userId);
+      UserDTO user = UserHolder.getUser();
+      Long userId = user.getUserId();
+      String userName = userInfo.get("userName");
+      String userEmail = userInfo.get("userEmail");
+      String motto = userInfo.get("motto");
+      String icon = userInfo.get("icon");
+      return blogUserDao.updateInfo(userName, userEmail, icon, motto, userId);
     } catch (Exception e) {
       log.error("Error updating user info", e);
       return false;
     }
   }
-
+/**
+ * @param userPwd
+ * @return boolean
+ * @description 更新用户密码
+ */
+  @Override
+  public boolean updatePwd(String userPwd) {
+    UserDTO user = UserHolder.getUser();
+    Long userId = user.getUserId();
+    String encodePwd = PasswordEncoder.encode(userPwd);
+    boolean updateFlag = blogUserDao.updatePwd(encodePwd, userId);
+    if(!updateFlag){
+      return  false;
+    }
+    stringRedisTemplate.delete("user:login:" + user.getUserPhone());
+    return true;
+  }
 }

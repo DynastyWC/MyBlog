@@ -1,0 +1,52 @@
+
+]
+java:S1192L"HDefine a constant instead of duplicating this literal "$unwind" 3 times.(¸´Ó
+\
+java:S1192—"FDefine a constant instead of duplicating this literal "$type" 3 times.(üß M
+f	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÿÎæ
+e	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸´Ó
+e	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ªê
+f	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‘¯¢
+k	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¥Ñüÿÿÿÿ
+s
+java:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(°³Š
+x
+java:S2629¨"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Œ¦‹µüÿÿÿÿ
+x
+java:S2629º"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(³ù©Ğøÿÿÿÿ
+x
+java:S2629À"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(³ù©Ğøÿÿÿÿ
+x
+java:S2629â"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¸¨ïøÿÿÿÿ
+S
+java:S1117G">Rename "collection" which hides the field declared at line 27.(ï—ß]
+X
+java:S3457"AFormat specifiers should be used instead of string concatenation.(°³Š
+i
+java:S3776Œ"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(öôü÷
+T
+java:S1117">Rename "collection" which hides the field declared at line 27.(ï—ß]
+]
+java:S3457¨"AFormat specifiers should be used instead of string concatenation.(Œ¦‹µüÿÿÿÿ
+]
+java:S3457º"AFormat specifiers should be used instead of string concatenation.(³ù©Ğøÿÿÿÿ
+]
+java:S3457À"AFormat specifiers should be used instead of string concatenation.(³ù©Ğøÿÿÿÿ
+C
+java:S1905Û"'Remove this unnecessary cast to "long".(à®îøÿÿÿÿ
+X
+java:S3457á"AFormat specifiers should be used instead of string concatenation.(Ùñ‘‡
+S
+java:S1117ë"<Rename "colNames" which hides the field declared at line 31.(ß¥Ò“
+o	java:S116÷"TRename this field "THRESHOLD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øà½Úÿÿÿÿÿ
+=
+java:S1170÷"!Make this final field static too.(Øà½Úÿÿÿÿÿ
+>
+java:S1948ö""Make "names" private or transient.(­³¬ûÿÿÿÿ
+o	java:S116˜"TRename this field "THRESHOLD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á—õÖşÿÿÿÿ
+=
+java:S1170˜"!Make this final field static too.(á—õÖşÿÿÿÿ
+K
+java:S3398Î"/Move this method into "ForkJoinGetProcessName".(áşû­ıÿÿÿÿ
+H
+java:S1068'"-Remove this unused "MAX_COUNT" private field.(í¸•ÿÿÿÿÿ

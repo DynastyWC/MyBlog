@@ -2,6 +2,8 @@ package com.dynasty.blog.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dynasty.blog.entity.BlogUserEntity;
+import java.util.ArrayList;
+import java.util.Map;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpSession;
  * @date 2023-12-11 22:49:03
  */
 public interface BlogUserService extends IService<BlogUserEntity> {
+
   // 用户注册接口
   Boolean doregister(BlogUserEntity blogUser);
 
@@ -17,5 +20,8 @@ public interface BlogUserService extends IService<BlogUserEntity> {
   String dologin(String userPhone, String userPwd, HttpSession session);
 
   // 更新用户信息
-  boolean updateInfo(BlogUserEntity blogUser);
+  boolean updateInfo(Map<String, String> userInfo);
+
+  //更新用户密码
+  boolean updatePwd(String userPwd);
 }

@@ -1,135 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>my-blog-center</artifactId>
+    <groupId>com.dynasty.blog</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
   <groupId>com.dynasty</groupId>
   <artifactId>my-blog-user-9961</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>my-blog-user-9961</name>
-  <description>my-blog-user-9961</description>
+  <packaging>jar</packaging>
+  <url>http://maven.apache.org</url>
   <properties>
-    <java.version>11</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-boot.version>2.6.13</spring-boot.version>
-    <spring-cloud-alibaba.version>2021.0.5.0</spring-cloud-alibaba.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.compilerVersion>11</maven.compiler.compilerVersion>
   </properties>
+
+  <!--项目依赖引入 -->
   <dependencies>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
+    <!--引入工具包-->
     <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>2.2.2</version>
+      <groupId>com.ktkg.tust</groupId>
+      <artifactId>kids-attention-commons</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
-    <!--jdbc-->
+    <!--引入mysql驱动包 -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
     </dependency>
-    <!--引入druid-starter自动化配置druid数据源-->
-
+    <!--引入druid连接池-->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>druid-spring-boot-starter</artifactId>
+      <version>1.2.8</version>
     </dependency>
-    <!--引入jdbc 整合到springboot-->
+    <!--JR33校验组件-->
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>2.0.1.Final</version>
     </dependency>
-
+    <!-- 图片的上传于下载依赖-->
     <dependency>
-      <groupId>com.dynasty.blog</groupId>
-      <artifactId>my-blog-commons</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid</artifactId>
-      <version>1.1.23</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
       <scope>compile</scope>
     </dependency>
+    <!-- pwd加密依赖 -->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.15</version>
+    </dependency>
+    <!--redis依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <!--jwt依赖-->
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>4.4.0</version>
+    </dependency>
+    <!--hutool-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.7.17</version>
+    </dependency>
+    <dependency>
+      <!--引入redisson客户端-->
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson</artifactId>
+      <version>3.13.6</version>
+    </dependency>
   </dependencies>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.alibaba.cloud</groupId>
-        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-        <version>${spring-cloud-alibaba.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <!--阿里数据库连接池 -->
-      <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>druid-spring-boot-starter</artifactId>
-        <version>1.2.20</version>
-      </dependency>
-      <!--jwt-->
-      <dependency>
-        <groupId>com.auth0</groupId>
-        <artifactId>java-jwt</artifactId>
-        <version>4.4.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.baomidou</groupId>
-        <artifactId>mybatis-plus-boot-starter</artifactId>
-        <version>3.4.3</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <source>11</source>
-          <target>11</target>
-          <encoding>UTF-8</encoding>
+          <testFailureIgnore>true</testFailureIgnore>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>${spring-boot.version}</version>
-        <configuration>
-          <mainClass>com.dynasty.blog.MyBlogUser9961Application</mainClass>
-          <skip>true</skip>
-        </configuration>
-        <executions>
-          <execution>
-            <id>repackage</id>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
-
 </project>

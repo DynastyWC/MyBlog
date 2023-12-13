@@ -19,6 +19,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 @Slf4j
 @Component
 public class userLoginInterceptor implements HandlerInterceptor {
+
   /***
    * 在请求处理之前进行调用(Controller方法调用之前)
    */
@@ -39,7 +40,7 @@ public class userLoginInterceptor implements HandlerInterceptor {
       String token = request.getHeader("authorization");
       log.info("token:{}", token);
       // 判断token是否符合登录要求
-      if (token.isEmpty()) {
+      if (token.isEmpty() || token == null) {
         return false;
       }
       // 不为空解析token去redis中查找对应的key值
@@ -59,7 +60,6 @@ public class userLoginInterceptor implements HandlerInterceptor {
       // 通过设置新的过期时间来刷新 key 的过期时间
       stringRedisTemplate.expire("user:login:" + userPhone, 100000L, TimeUnit.MINUTES);
       return true;
-
     } catch (Exception e) {
       throw new RuntimeException(e);
     }
