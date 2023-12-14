@@ -20,4 +20,6 @@ public final class Constant {
   public static final String ORDER = "order";
   /** 升序 */
   public static final String ASC = "asc";
+  /** redis中用户token的key*/
+  public static final String USER_LOGIN = "user:login:";
 }

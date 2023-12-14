@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.dynasty.blog.DTO.UserDTO;
 import com.dynasty.blog.utils.JwtUtil;
 import com.dynasty.blog.utils.UserHolder;
+import com.kgkt.tust.common.exception.CodeEnum;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import javax.servlet.http.HttpServletRequest;
@@ -24,11 +25,9 @@ public class userLoginInterceptor implements HandlerInterceptor {
    * 在请求处理之前进行调用(Controller方法调用之前)
    */
   private StringRedisTemplate stringRedisTemplate;
-
   public userLoginInterceptor(StringRedisTemplate stringRedisTemplate) {
     this.stringRedisTemplate = stringRedisTemplate;
   }
-
   @Override
   public boolean preHandle(
       HttpServletRequest request, HttpServletResponse response, Object handler) {
@@ -40,7 +39,9 @@ public class userLoginInterceptor implements HandlerInterceptor {
       String token = request.getHeader("authorization");
       log.info("token:{}", token);
       // 判断token是否符合登录要求
-      if (token.isEmpty() || token == null) {
+      if (token == null) {
+        response.getWriter().write(CodeEnum.LOGIN_ERROR.getMsg());
+        response.setStatus(CodeEnum.LOGIN_ERROR.getCode());
         return false;
       }
       // 不为空解析token去redis中查找对应的key值
@@ -51,6 +52,8 @@ public class userLoginInterceptor implements HandlerInterceptor {
       log.info("redisToken:{}", redisToken);
       // 判断token和redis中的token是否相等
       if (!redisToken.equals(token)) {
+        response.getWriter().write(CodeEnum.LOGIN_ERROR.getMsg());
+        response.setStatus(CodeEnum.LOGIN_ERROR.getCode());
         return false;
       }
       log.info("map:{}", map);

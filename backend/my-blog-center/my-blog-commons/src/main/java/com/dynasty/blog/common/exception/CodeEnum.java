@@ -14,9 +14,11 @@ import lombok.ToString;
 public enum CodeEnum {
 
   // 自定义异常列举
+  TOKEN_NULL(401, "用户未授权!"),
+  TOKEN_UNMATCH(4001, "用户匹配!"),
   UNKNOWN_EXCEPTION(40000, "服务器内部异常，请联系管理员"),
   INVALID_EXCEPTION(40001, "参数校验异常"),
-  LOGIN_ERROR(40002, "用户id或密码错误"),
+  LOGIN_ERROR(40002, "用户未授权"),
   ACCOUNT_NOT_EXIST(40003, "用户账号不存在"),
   MOBILE_ERROR(40004, "手机号码格式错误"),
   BING_ERROR(40005, "参数绑定异常~"),

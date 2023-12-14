@@ -4,6 +4,8 @@ import javax.annotation.Resource;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.http.MediaType;
+import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -20,8 +22,8 @@ public class MvcConfig implements WebMvcConfigurer {
     // 添加拦截器并排除不需要拦截的路径，即不用登录也可以访问的页面
     registry
         .addInterceptor(new userLoginInterceptor(stringRedisTemplate))
-        .excludePathPatterns("/user/login", "/user/register")
-        .order(Ordered.HIGHEST_PRECEDENCE);;
+        .excludePathPatterns("/user/login", "/user/register","/user/test")
+        .order(Ordered.HIGHEST_PRECEDENCE);
   }
 
 }

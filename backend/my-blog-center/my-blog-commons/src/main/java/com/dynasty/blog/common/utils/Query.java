@@ -8,7 +8,7 @@ import java.util.Map;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * @author zgq
+ * @author Dynasty
  * @description 分页查询中查询某参数工具类
  */
 public class Query<T> {
