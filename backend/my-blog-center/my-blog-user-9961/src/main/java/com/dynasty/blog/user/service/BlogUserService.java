@@ -2,6 +2,7 @@ package com.dynasty.blog.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dynasty.blog.user.entity.BlogUserEntity;
+import com.dynasty.blog.user.entity.PageBean;
 import java.util.ArrayList;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
@@ -27,11 +28,14 @@ public interface BlogUserService extends IService<BlogUserEntity> {
 
   //删除用户信息
   boolean deleteUser(Long userId);
+
   //查询用户信息
   BlogUserEntity getUserInfo();
 
   //查询所有用户
   ArrayList<BlogUserEntity> getAllUser();
-
+  //用户分页查询
+  PageBean<BlogUserEntity> usetList(Integer pageNum, Integer pageSize,
+      String userName,String userPhone, Integer deleted);
 
 }

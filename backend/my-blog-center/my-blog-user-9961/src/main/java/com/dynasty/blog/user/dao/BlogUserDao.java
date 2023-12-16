@@ -3,6 +3,8 @@ package com.dynasty.blog.user.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import java.util.ArrayList;
+import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -15,8 +17,10 @@ import org.apache.ibatis.annotations.Update;
  * @email study_wc@163.com
  * @date 2023-12-11 22:49:03
  */
+
 @Mapper
 public interface BlogUserDao extends BaseMapper<BlogUserEntity> {
+
 
   //查询手机号是否被注册
   @Select("select * from blog_user where user_phone = #{param1}")
@@ -42,4 +46,8 @@ public interface BlogUserDao extends BaseMapper<BlogUserEntity> {
   //查询所有用户信息
   @Select("SELECT  * FROM blog_user ")
   ArrayList<BlogUserEntity> getALLUser();
+
+
+  //用户分页查询接口
+  List<BlogUserEntity> userList(@Param("param1")String userName,@Param("param2") String userPhone, @Param("param3")Integer deleted);
 }

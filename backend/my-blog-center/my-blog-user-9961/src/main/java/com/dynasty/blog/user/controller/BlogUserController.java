@@ -1,6 +1,7 @@
 package com.dynasty.blog.user.controller;
 
 import com.dynasty.blog.user.entity.BlogUserEntity;
+import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.service.BlogUserService;
 
 import com.dynasty.blog.user.utils.MyBindResultUtils;
@@ -143,6 +144,24 @@ public class BlogUserController {
     }
     return R.ok().put("allUser", allUser);
   }
+
+  /**
+   * @author dynasty
+   * @description 用户分页查询
+   */
+  @GetMapping
+  public R getAlluser(
+      Integer pageNum,
+      Integer pageSize,
+      @RequestParam(required = false) String userName,
+      @RequestParam(required = false) String userPhone,
+      @RequestParam(required = false) Integer deleted
+  ) {
+    PageBean<BlogUserEntity> userList = blogUserService.usetList(pageNum, pageSize,
+        userName, userPhone, deleted);
+    return R.ok().put("userData", userList);
+  }
+
 
   /**
    * @author dynasty

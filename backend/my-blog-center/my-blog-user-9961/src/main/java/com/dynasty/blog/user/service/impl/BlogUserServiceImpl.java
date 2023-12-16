@@ -9,14 +9,18 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.injector.methods.DeleteById;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dynasty.blog.user.DTO.UserDTO;
+import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.utils.JwtUtil;
 import com.dynasty.blog.user.utils.PasswordEncoder;
 import com.dynasty.blog.user.dao.BlogUserDao;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import com.dynasty.blog.user.service.BlogUserService;
 import com.dynasty.blog.user.utils.UserHolder;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
@@ -71,7 +75,7 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     }
     // 通过手机号去查用户信息
     BlogUserEntity user = blogUserDao.getByPhone(userPhone);
-    if (BeanUtil.isEmpty(user)||user.getDeleted()==1){
+    if (BeanUtil.isEmpty(user) || user.getDeleted() == 1) {
       return null;
     }
     Integer deleteFlag = user.getDeleted();
@@ -147,7 +151,7 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
   @Override
   public boolean deleteUser(Long userId) {
     int deleteFlag = blogUserDao.deleteById(userId);
-    if (deleteFlag!=1) {
+    if (deleteFlag != 1) {
       return false;
     }
     UserDTO user = UserHolder.getUser();
@@ -183,4 +187,22 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     }
     return allUser;
   }
+
+  @Override
+  public PageBean<BlogUserEntity> usetList(Integer pageNum, Integer pageSize, String userName,
+      String userPhone, Integer deleted) {
+    //获取pageBean对象，将查询得到的数据填充进去
+    PageBean<BlogUserEntity> pageBean = new PageBean<>();
+    //使用分页插件pageHelper开启分页查询
+    PageHelper.startPage(pageNum, pageSize);
+    //调用dap层的动态sql去查询数据
+    List<BlogUserEntity> userList = blogUserDao.userList(userName, userPhone, deleted);
+    //需要强转到page对象，因为调用dao层拿不到返回的总记录数，但是可以使用pageHelper提供的page对象将其强转，获得查询总记录数，父类拿不到子类的方法
+    Page<BlogUserEntity> list = (Page<BlogUserEntity>) userList;
+    pageBean.setTotal(list.getTotal());
+    pageBean.setAllUserData(list.getResult());
+    return pageBean;
+  }
+
+
 }

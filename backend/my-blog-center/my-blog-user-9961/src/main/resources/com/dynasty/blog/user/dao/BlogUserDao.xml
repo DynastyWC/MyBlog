@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dynasty.blog.user.dao.BlogUserDao">
+  <!--分页动态sql-->
+  <select id="userList" resultType="com.dynasty.blog.user.entity.BlogUserEntity">
+    select * from blog_user
+    <where>
+      <if test="param1 != null">
+        user_name = #{param1}
+      </if>
+      <if test="param2 != null">
+        and user_phone = #{param2}
+      </if>
+      <if test="param3 != null">
+        and deleted = #{param3}
+      </if>
+    </where>
+  </select>
+</mapper>

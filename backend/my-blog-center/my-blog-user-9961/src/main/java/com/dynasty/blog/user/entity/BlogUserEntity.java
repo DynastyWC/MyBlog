@@ -23,47 +23,72 @@ import lombok.Data;
 @Data
 @TableName("blog_user")
 public class BlogUserEntity implements Serializable {
+
   private static final long serialVersionUID = 1L;
 
-  /** 用户id* */
+  /**
+   * 用户id*
+   */
   @TableId(value = "user_id", type = IdType.AUTO)
   private Long userId;
-  /** 用户姓名* */
+  /**
+   * 用户姓名*
+   */
 
   @NotEmpty(message = "用户姓名不能为空!")
   private String userName;
-  /** 用户手机号* */
-  @Pattern(regexp =  "^1[34578]\\d{9}$", message = "手机号码格式错误")
+  /**
+   * 用户手机号*
+   */
+  @Pattern(regexp = "^1[34578]\\d{9}$", message = "手机号码格式错误")
   @NotEmpty(message = "用户手机号不能为空!")
   private String userPhone;
-  /** 用户身份* */
+  /**
+   * 用户身份*
+   */
 
   private Integer userRole;
-  /** 用户邮箱-登录账号* */
+  /**
+   * 用户邮箱-登录账号*
+   */
   @Email(message = "email不合法!")
   @NotEmpty(message = "用户邮箱不能为空!")
   private String userEmail;
-  /** 用户座右铭* */
+  /**
+   * 用户座右铭*
+   */
   private String motto;
-  /** 用户头像* */
+  /**
+   * 用户头像*
+   */
 
   private String icon;
-  /** 用户登录密码* */
+  /**
+   * 用户登录密码*
+   */
   @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", message = "密码长度至少8位，包含字母和数字")
   private String userPwd;
-  /** 乐观锁 */
-  @TableField(value = "version",fill = FieldFill.INSERT)
+  /**
+   * 乐观锁
+   */
+  @TableField(value = "version", fill = FieldFill.INSERT)
   @Version
   private Integer version;
-  /** 写入时间 */
+  /**
+   * 写入时间
+   */
   @TableField(fill = FieldFill.INSERT)
   private LocalDateTime addTime;
-  /** 修改时间 */
+  /**
+   * 修改时间
+   */
 
   @TableField(fill = FieldFill.INSERT_UPDATE)
   private LocalDateTime updateTime;
-  /** 逻辑删除状态 */
+  /**
+   * 逻辑删除状态
+   */
   @TableLogic()
-  @TableField(value = "deleted",fill = FieldFill.INSERT_UPDATE, select = false)
+  @TableField(value = "deleted", fill = FieldFill.INSERT_UPDATE, select = false)
   private Integer deleted;
 }
