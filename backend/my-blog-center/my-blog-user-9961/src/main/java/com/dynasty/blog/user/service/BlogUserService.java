@@ -6,6 +6,7 @@ import com.dynasty.blog.user.entity.PageBean;
 import java.util.ArrayList;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author dynasty
@@ -34,8 +35,11 @@ public interface BlogUserService extends IService<BlogUserEntity> {
 
   //查询所有用户
   ArrayList<BlogUserEntity> getAllUser();
+
   //用户分页查询
   PageBean<BlogUserEntity> usetList(Integer pageNum, Integer pageSize,
-      String userName,String userPhone, Integer deleted);
+      String userName, String userPhone, Integer deleted);
 
+  //文件下载
+  String upload(MultipartFile file);
 }

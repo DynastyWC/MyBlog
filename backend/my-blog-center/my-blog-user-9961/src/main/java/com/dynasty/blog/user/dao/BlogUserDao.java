@@ -47,7 +47,11 @@ public interface BlogUserDao extends BaseMapper<BlogUserEntity> {
   @Select("SELECT  * FROM blog_user ")
   ArrayList<BlogUserEntity> getALLUser();
 
-
   //用户分页查询接口
-  List<BlogUserEntity> userList(@Param("param1")String userName,@Param("param2") String userPhone, @Param("param3")Integer deleted);
+  List<BlogUserEntity> userList(@Param("param1") String userName, @Param("param2") String userPhone,
+      @Param("param3") Integer deleted);
+
+  //更新用户头像地址
+  @Update("update blog_user set icon = #{param1} where user_id = #{param2}")
+  void uploadUrl(@Param("param1") String fileUrl, @Param("param2") Long userId);
 }

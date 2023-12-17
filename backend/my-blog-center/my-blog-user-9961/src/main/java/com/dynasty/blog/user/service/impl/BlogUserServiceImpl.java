@@ -1,16 +1,15 @@
 package com.dynasty.blog.user.service.impl;
 
+import static com.dynasty.blog.user.utils.Constant.OSS_USER_ICON;
 import static com.dynasty.blog.user.utils.Constant.USER_LOGIN;
 
 import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.injector.methods.DeleteById;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dynasty.blog.user.DTO.UserDTO;
 import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.utils.JwtUtil;
+import com.dynasty.blog.user.utils.OssUtils;
 import com.dynasty.blog.user.utils.PasswordEncoder;
 import com.dynasty.blog.user.dao.BlogUserDao;
 import com.dynasty.blog.user.entity.BlogUserEntity;
@@ -18,16 +17,19 @@ import com.dynasty.blog.user.service.BlogUserService;
 import com.dynasty.blog.user.utils.UserHolder;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 @Slf4j
 @Service("blogUserService")
@@ -56,11 +58,7 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     String encodePwd = PasswordEncoder.encode(userPwd);
     blogUser.setUserPwd(encodePwd);
     // 将用户信息写到数据库
-    boolean saveFlag = save(blogUser);
-    if (!saveFlag) {
-      return false;
-    }
-    return true;
+    return save(blogUser);
   }
 
   /**
@@ -85,7 +83,9 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     // 解密并校验密码
     String userPwdInDb = user.getUserPwd();
     Boolean matches = PasswordEncoder.matches(userPwdInDb, userPwd);
-    if (matches) {
+    if (!matches) {
+      return null;
+    } else {
       HashMap<String, Object> claims = new HashMap<>();
       claims.put("userId", user.getUserId());
       claims.put("userName", user.getUserName());
@@ -99,8 +99,6 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
       session.setAttribute("authorization", token);
       log.info("token:{}", token);
       return token;
-    } else {
-      return null;
     }
   }
 
@@ -125,7 +123,6 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
   }
 
   /**
-   * @param userPwd
    * @return boolean
    * @description 更新用户密码
    */
@@ -144,7 +141,6 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
   }
 
   /**
-   * @param userId
    * @return boolean
    * @description 删除用户信息(逻辑删除)
    */
@@ -160,7 +156,6 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
   }
 
   /**
-   * @param
    * @return boolean
    * @description 获取用户所有信息
    */
@@ -188,6 +183,10 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     return allUser;
   }
 
+  /**
+   * @return PageBean<BlogUserEntity>
+   * @description 用户分页查询
+   */
   @Override
   public PageBean<BlogUserEntity> usetList(Integer pageNum, Integer pageSize, String userName,
       String userPhone, Integer deleted) {
@@ -204,5 +203,31 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
     return pageBean;
   }
 
-
+  /**
+   * @return String
+   * @description 文件上传至oss
+   */
+  @Override
+  public String upload(MultipartFile file) {
+    String fileUrl;
+    try {
+      //获取文件的输入流，然后将其写在磁盘中
+      //获取文件的原始文件名，目的是做截取，截取到文件的格式 .jpg .png
+      String originalFilename = file.getOriginalFilename();
+      //获得唯一的文件名进行保存使用.substring(文件名.lastIndexOf("分割对象"))
+      assert originalFilename != null;
+      String FileName = UUID.randomUUID().toString() + originalFilename.substring(
+          originalFilename.lastIndexOf("."));
+      //要想上传到指定的容器文件夹需要在上传的文件名前拼接文件名
+      String fileEndName = OSS_USER_ICON + FileName;
+      //使用oss工具类完成上传，只需要文件名和文件的输入流，可通过file.inputstream来获得
+      fileUrl = OssUtils.OssUpload(fileEndName, file.getInputStream());
+      //从threadLocal中去获取用户的id，用于接下来的文件信息更新
+      Long userId = UserHolder.getUser().getUserId();
+      blogUserDao.uploadUrl(fileUrl, userId);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+    return fileUrl;
+  }
 }

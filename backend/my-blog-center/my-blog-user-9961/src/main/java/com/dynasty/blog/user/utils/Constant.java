@@ -10,4 +10,5 @@ public final class Constant {
 
   /** redis中用户token的key*/
   public static final String USER_LOGIN = "user:login:";
+  public static final String OSS_USER_ICON = "user:login:";
 }

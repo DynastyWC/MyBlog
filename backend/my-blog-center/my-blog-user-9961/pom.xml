@@ -98,6 +98,11 @@
       <artifactId>pagehelper-spring-boot-starter</artifactId>
       <version>1.4.7</version>
     </dependency>
+    <!--阿里云存储oss-->
+    <dependency>
+      <groupId>com.aliyun.oss</groupId>
+      <artifactId>aliyun-sdk-oss</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

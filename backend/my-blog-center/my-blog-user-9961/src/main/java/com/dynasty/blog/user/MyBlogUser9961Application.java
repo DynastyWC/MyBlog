@@ -10,7 +10,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MyBlogUser9961Application {
   public static void main(String[] args) {
     SpringApplication.run(MyBlogUser9961Application.class, args);
-    // TODO 用户头像上传与下载
   }
-
 }

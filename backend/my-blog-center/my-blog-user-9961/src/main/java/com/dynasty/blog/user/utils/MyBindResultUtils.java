@@ -1,6 +1,4 @@
 package com.dynasty.blog.user.utils;
-
-import com.kgkt.tust.common.utils.R;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.validation.BindingResult;

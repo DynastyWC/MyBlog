@@ -3,7 +3,6 @@ package com.dynasty.blog.user.controller;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.service.BlogUserService;
-
 import com.dynasty.blog.user.utils.MyBindResultUtils;
 import com.kgkt.tust.common.utils.R;
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.BindingResultUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -23,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author dynasty
@@ -123,7 +122,7 @@ public class BlogUserController {
    * @author dynasty
    * @description 查询用户信息用于回显
    */
-  @GetMapping("/getUserInfo")
+  @GetMapping("/UserInfo")
   public R getUserInfo() {
     BlogUserEntity userInfo = blogUserService.getUserInfo();
     if (userInfo == null) {
@@ -162,6 +161,18 @@ public class BlogUserController {
     return R.ok().put("userData", userList);
   }
 
+  /**
+   * @author dynasty
+   * @description 用户头像上传至oss
+   */
+  @PostMapping("/upload")
+  public R upload(MultipartFile file) {
+    if (file == null) {
+      return R.error("文件格式错误！");
+    }
+    String fileUrl = blogUserService.upload(file);
+    return R.ok("文件上传成功！").put("fileUrl", fileUrl);
+  }
 
   /**
    * @author dynasty

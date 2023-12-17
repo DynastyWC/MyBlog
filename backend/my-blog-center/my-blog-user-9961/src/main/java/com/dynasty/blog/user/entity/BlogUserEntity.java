@@ -89,6 +89,6 @@ public class BlogUserEntity implements Serializable {
    * 逻辑删除状态
    */
   @TableLogic()
-  @TableField(value = "deleted", fill = FieldFill.INSERT_UPDATE, select = false)
+  @TableField(value = "deleted", fill = FieldFill.INSERT_UPDATE)
   private Integer deleted;
 }
