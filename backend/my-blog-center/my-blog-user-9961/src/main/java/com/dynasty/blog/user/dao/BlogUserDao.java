@@ -1,8 +1,10 @@
 package com.dynasty.blog.user.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.dynasty.blog.user.DTO.UserDTO;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Delete;
@@ -40,8 +42,8 @@ public interface BlogUserDao extends BaseMapper<BlogUserEntity> {
   boolean deleteUser(@Param("param1") Long userId);
 
   //登录校验用户是否处于禁用状态
-  @Select("select deleted from blog_user where user_phone = #{param1}")
-  int checkUserState(@Param("param1") String userPhone);
+  @Select("select * from blog_user where user_phone = #{param1}")
+  BlogUserEntity checkUserState(@Param("param1") String userPhone);
 
   //查询所有用户信息
   @Select("SELECT  * FROM blog_user ")

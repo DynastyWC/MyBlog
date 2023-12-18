@@ -1,5 +1,6 @@
 package com.dynasty.blog.user.controller;
 
+import com.dynasty.blog.user.DTO.UserDTO;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.service.BlogUserService;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -28,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @email study_wc@163.com
  * @date 2023-12-11 22:49:03
  */
+@CrossOrigin(origins = "http://localhost:8082", maxAge = 3600)
 @Slf4j
 @RestController
 @RequestMapping("/user")
@@ -88,7 +91,15 @@ public class BlogUserController {
     }
     return R.ok("信息更新成功！");
   }
-
+  /**
+   * @author dynasty
+   * @description 校验用户是否注册
+   */
+@GetMapping("/checkUser")
+public R checkUser(String userPhone){
+  UserDTO loginUser = blogUserService.checkUser(userPhone);
+  return R.ok().put("loginUser", loginUser);
+}
   /**
    * @author dynasty
    * @description 用户密码更新接口

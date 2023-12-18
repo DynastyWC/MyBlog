@@ -27,6 +27,7 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -229,5 +230,16 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
       throw new RuntimeException(e);
     }
     return fileUrl;
+  }
+  /**
+   * @return BlogUserEntity
+   * @description 查询用户状态
+   */
+  @Override
+  public UserDTO checkUser(String userPhone) {
+    UserDTO userDTO = new UserDTO();
+    BlogUserEntity blogUserEntity = blogUserDao.checkUserState(userPhone);
+    BeanUtils.copyProperties(blogUserEntity,userDTO);
+    return userDTO;
   }
 }
