@@ -1,0 +1,96 @@
+2023-12-16-22:04:01.674 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:04:01.676 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-22:04:01.677 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:04:01.678 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-22:04:01.679 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-22:04:01.680 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-22:04:01.680 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-22:04:01.680 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-22:04:01.680 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-22:04:25.378 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:04:25.379 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-22:04:25.380 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:04:25.381 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-22:04:25.382 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-22:04:25.383 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-22:04:25.383 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-22:04:25.383 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-22:04:25.383 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-22:05:03.407 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:03.407 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-22:05:03.408 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:03.408 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-22:05:03.410 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-22:05:03.410 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-22:05:03.410 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-22:05:03.410 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:18738805034
+2023-12-16-22:05:03.410 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-22:05:25.513 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:25.514 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-22:05:25.515 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:25.515 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-22:05:25.516 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-22:05:25.516 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-22:05:25.516 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-22:05:25.517 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:18738805034
+2023-12-16-22:05:25.517 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:1
+2023-12-16-22:05:33.583 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:33.584 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-22:05:33.585 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-22:05:33.585 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-22:05:33.586 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-22:05:33.586 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-22:05:33.586 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-22:05:33.587 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:18738805034
+2023-12-16-22:05:33.587 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:0
+2023-12-16-22:16:01.374 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-22:16:01.375 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-22:16:01.378 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed

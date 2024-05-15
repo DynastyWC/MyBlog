@@ -1,0 +1,600 @@
+2023-12-19-15:36:13.959 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 16244 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-19-15:36:13.961 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-19-15:36:13.962 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-19-15:36:14.584 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-19-15:36:14.586 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-19-15:36:14.610 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-19-15:36:14.889 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-19-15:36:15.232 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-19-15:36:15.240 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:36:15.240 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-19-15:36:15.241 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-19-15:36:15.325 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-19-15:36:15.325 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1322 ms
+2023-12-19-15:36:15.635 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-19-15:36:15.642 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-19-15:36:15.730 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-19-15:36:16.090 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:36:16.147 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-19-15:36:16.399 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:36:16.440 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-19-15:36:16.443 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.918 seconds (JVM running for 5.083)
+2023-12-19-15:37:11.387 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-19-15:37:11.387 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-19-15:37:11.392 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 5 ms
+2023-12-19-15:37:11.780 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$c67736fc.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:37:11.786 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:37:42.437 ERROR [http-nio-9961-exec-2]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$c67736fc.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:37:42.438 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:37:52.650 ERROR [http-nio-9961-exec-3]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$c67736fc.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:37:52.651 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:38:39.443 ERROR [http-nio-9961-exec-5]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$c67736fc.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:38:39.446 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:38:41.081 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:38:41.082 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-19-15:38:41.086 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-19-15:38:46.201 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 1408 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-19-15:38:46.205 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-19-15:38:46.206 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-19-15:38:46.876 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-19-15:38:46.878 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-19-15:38:46.906 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2023-12-19-15:38:47.189 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-19-15:38:47.535 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-19-15:38:47.543 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:38:47.544 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-19-15:38:47.544 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-19-15:38:47.629 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-19-15:38:47.630 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1366 ms
+2023-12-19-15:38:47.951 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-19-15:38:47.958 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-19-15:38:48.046 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-19-15:38:48.422 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:38:48.474 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-19-15:38:48.711 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:38:48.756 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-19-15:38:48.758 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.143 seconds (JVM running for 4.274)
+2023-12-19-15:39:06.552 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-19-15:39:06.553 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-19-15:39:06.558 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 5 ms
+2023-12-19-15:39:06.898 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$2add6ad4.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:39:06.904 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:39:54.124 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:39:54.125 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-19-15:39:54.128 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-19-15:41:37.989 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 13820 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-19-15:41:37.992 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-19-15:41:37.993 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-19-15:41:38.555 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-19-15:41:38.558 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-19-15:41:38.586 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2023-12-19-15:41:38.911 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-19-15:41:39.320 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-19-15:41:39.328 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:41:39.329 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-19-15:41:39.329 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-19-15:41:39.413 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-19-15:41:39.413 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1374 ms
+2023-12-19-15:41:39.764 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-19-15:41:39.774 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-19-15:41:39.871 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-19-15:41:40.212 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:41:40.264 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-19-15:41:40.475 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:41:40.518 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-19-15:41:40.520 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.03 seconds (JVM running for 3.885)
+2023-12-19-15:42:09.875 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-19-15:42:09.875 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-19-15:42:09.879 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2023-12-19-15:43:52.909 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:43:52.909 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-19-15:43:52.911 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-19-15:43:58.067 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 15676 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-19-15:43:58.071 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-19-15:43:58.071 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-19-15:43:58.623 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-19-15:43:58.625 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-19-15:43:58.657 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2023-12-19-15:43:58.932 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-19-15:43:59.267 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-19-15:43:59.276 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:43:59.276 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-19-15:43:59.277 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-19-15:43:59.358 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-19-15:43:59.358 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1245 ms
+2023-12-19-15:43:59.688 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-19-15:43:59.696 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-19-15:43:59.782 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-19-15:44:00.171 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-19-15:44:00.227 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-19-15:44:00.486 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-19-15:44:00.527 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-19-15:44:00.529 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.951 seconds (JVM running for 3.716)
+2023-12-19-15:44:16.594 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-19-15:44:16.594 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-19-15:44:16.600 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 6 ms
+2023-12-19-15:52:51.026 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:53:05.877 ERROR [http-nio-9961-exec-4]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.checkUser(BlogUserServiceImpl.java:242)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$e3741a0f.checkUser(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.checkUser(BlogUserController.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-19-15:53:05.881 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:53:05.926 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-19-15:53:27.224 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null

@@ -6,7 +6,7 @@ import static com.dynasty.blog.user.utils.Constant.USER_LOGIN;
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.dynasty.blog.user.DTO.UserDTO;
+import com.dynasty.blog.user.entity.DTO.UserDTO;
 import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.utils.JwtUtil;
 import com.dynasty.blog.user.utils.OssUtils;
@@ -239,6 +239,9 @@ public class BlogUserServiceImpl extends ServiceImpl<BlogUserDao, BlogUserEntity
   public UserDTO checkUser(String userPhone) {
     UserDTO userDTO = new UserDTO();
     BlogUserEntity blogUserEntity = blogUserDao.checkUserState(userPhone);
+    if(blogUserEntity==null){
+      return null;
+    }
     BeanUtils.copyProperties(blogUserEntity,userDTO);
     return userDTO;
   }

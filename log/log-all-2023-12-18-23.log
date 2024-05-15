@@ -1,0 +1,90 @@
+2023-12-18-23:28:16.632 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 16636 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-18-23:28:16.635 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-18-23:28:16.635 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-18-23:28:19.503 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18-23:28:19.523 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-18-23:28:19.600 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2023-12-18-23:28:20.573 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-18-23:28:21.456 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-18-23:28:21.481 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-18-23:28:21.482 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-18-23:28:21.482 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-18-23:28:21.593 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-18-23:28:21.593 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 4817 ms
+2023-12-18-23:28:22.705 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-18-23:28:22.716 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-18-23:28:23.016 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-18-23:28:23.625 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18-23:28:23.724 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-18-23:28:24.438 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-18-23:28:24.508 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-18-23:28:24.512 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 9.362 seconds (JVM running for 13.781)
+2023-12-18-23:28:43.380 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-18-23:28:43.380 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-18-23:28:43.400 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 20 ms
+2023-12-18-23:33:57.645 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:33:57.990 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-18-23:33:57.992 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-18-23:33:58.381 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTcyMzcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.mkqicUNCA7kvus68OgGtjihvMIevSZa6G6eFS-hB5dA
+2023-12-18-23:35:09.248 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:35:16.413 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:35:16.415 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTczMTYsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.PZCa6KZFz6BeAJpDXtbNnUwRtLzfBnMqpNXzjXcfAs4
+2023-12-18-23:41:20.117 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:41:20.119 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTc2ODAsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19._apxztAUigEMGeUY-H75lB5eNCET-PypfIs_7VHqpDE
+2023-12-18-23:43:34.784 INFO [http-nio-9961-exec-8]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:43:34.786 INFO [http-nio-9961-exec-8]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTc4MTQsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.b8kkV9kzTzj-H3juXmDBQXsg1G9AG-2yMJDQqhOcPb0
+2023-12-18-23:43:45.792 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:43:45.797 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTc4MjUsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.Lc4nXPwFsFZ77c3QE23a-uPDL2BqTSY6kimVL3fg8kw
+2023-12-18-23:45:55.776 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:45:55.778 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTc5NTUsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.Yq_tgTYH93za8aR9OK-HcOjC7L9bMkijI6_VRl2MS2A
+2023-12-18-23:47:03.511 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:47:03.513 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTgwMjMsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.H7sieEG8HVg4xmC04d_IdoDS8JlDdzIGmQgzokXZL1c
+2023-12-18-23:49:10.963 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:50:03.995 INFO [http-nio-9961-exec-10]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:51:23.582 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-23:51:23.584 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5MTgyODMsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.h4fnuSFl7BwCPDYPF2xHl_cXChbOQTc1iKGEI2h0Eg0

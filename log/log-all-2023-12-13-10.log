@@ -1,0 +1,110 @@
+2023-12-13-10:45:07.209 INFO [background-preinit]-
+        org.hibernate.validator.internal.util.Version:21>>HV000001: Hibernate Validator 6.2.5.Final
+2023-12-13-10:45:07.209 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application using Java 17.0.7 on Dynasty with PID 14016 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-13-10:45:07.212 INFO [main]-
+        org.springframework.boot.SpringApplication:645>>No active profile set, falling back to 1 default profile: "default"
+2023-12-13-10:45:12.886 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:262>>Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-13-10:45:12.968 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:132>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-13-10:45:13.277 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:201>>Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2023-12-13-10:45:17.595 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108>>Tomcat initialized with port(s): 9961 (http)
+2023-12-13-10:45:17.646 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-13-10:45:17.647 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-13-10:45:17.647 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-12-13-10:45:17.833 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-13-10:45:17.834 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290>>Root WebApplicationContext: initialization completed in 10499 ms
+2023-12-13-10:45:21.901 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-13-10:45:23.407 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:983>>{dataSource-1} inited
+2023-12-13-10:45:24.590 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:53>>Adding welcome page: class path resource [static/index.html]
+2023-12-13-10:45:25.088 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-13-10:45:25.130 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-13-10:45:25.140 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 18.985 seconds (JVM running for 20.18)
+2023-12-13-10:46:19.452 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-13-10:46:19.453 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-13-10:46:19.453 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 0 ms
+2023-12-13-10:46:19.643 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-13-10:46:19.644 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@19f617cb
+2023-12-13-10:46:19.646 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@19f617cb
+2023-12-13-10:47:00.413 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-13-10:47:00.414 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@ff3b58e
+2023-12-13-10:47:00.414 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@ff3b58e
+2023-12-13-10:47:17.172 INFO [SpringApplicationShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2024>>{dataSource-1} closing ...
+2023-12-13-10:47:17.201 INFO [SpringApplicationShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2096>>{dataSource-1} closed
+2023-12-13-10:47:22.601 INFO [background-preinit]-
+        org.hibernate.validator.internal.util.Version:21>>HV000001: Hibernate Validator 6.2.5.Final
+2023-12-13-10:47:22.608 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application using Java 17.0.7 on Dynasty with PID 5108 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-13-10:47:22.609 INFO [main]-
+        org.springframework.boot.SpringApplication:645>>No active profile set, falling back to 1 default profile: "default"
+2023-12-13-10:47:23.179 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:262>>Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-13-10:47:23.182 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:132>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-13-10:47:23.204 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:201>>Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-12-13-10:47:23.724 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108>>Tomcat initialized with port(s): 9961 (http)
+2023-12-13-10:47:23.733 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-13-10:47:23.733 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-13-10:47:23.733 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-12-13-10:47:23.830 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-13-10:47:23.831 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290>>Root WebApplicationContext: initialization completed in 1178 ms
+2023-12-13-10:47:24.191 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-13-10:47:24.274 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:983>>{dataSource-1} inited
+2023-12-13-10:47:24.665 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:53>>Adding welcome page: class path resource [static/index.html]
+2023-12-13-10:47:24.831 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-13-10:47:24.855 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-13-10:47:24.865 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.711 seconds (JVM running for 3.609)
+2023-12-13-10:48:09.149 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-13-10:48:09.149 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-13-10:48:09.150 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 1 ms
+2023-12-13-10:48:09.262 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-13-10:48:09.263 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@33f12e87
+2023-12-13-10:48:09.265 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@33f12e87
+2023-12-13-10:56:14.100 INFO [SpringApplicationShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2024>>{dataSource-1} closing ...
+2023-12-13-10:56:14.103 INFO [SpringApplicationShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2096>>{dataSource-1} closed

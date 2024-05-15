@@ -1,11 +1,10 @@
 package com.dynasty.blog.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.dynasty.blog.user.DTO.UserDTO;
+import com.dynasty.blog.user.entity.DTO.UserDTO;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import com.dynasty.blog.user.entity.PageBean;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
 import org.springframework.web.multipart.MultipartFile;

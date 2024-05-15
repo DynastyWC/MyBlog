@@ -26,10 +26,12 @@ public class MvcConfig implements WebMvcConfigurer {
         .excludePathPatterns(
             "/user/login",
             "/user/register",
-            "/user//checkUser",
+            "/ws-chat",
+            "/user/checkUser",
             "/**/*.html",                //html静态资源
             "/**/*.js",                  //js静态资源
-            "/**/*.css"                  //css静态资源
+            "/**/*.css",            //css静态资源
+            "/**"
 
         )
         .order(Ordered.HIGHEST_PRECEDENCE);

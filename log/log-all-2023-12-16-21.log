@@ -1,0 +1,1096 @@
+2023-12-16-21:18:25.603 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 15380 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:18:25.608 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:18:25.608 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:18:27.526 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:18:27.551 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:18:27.636 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2023-12-16-21:18:28.592 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:18:29.482 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:18:29.501 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:18:29.501 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:18:29.501 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:18:29.625 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:18:29.625 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 3938 ms
+2023-12-16-21:18:30.618 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:18:30.625 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:18:30.917 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:18:31.477 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:18:31.563 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:18:31.973 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:18:32.033 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:18:32.036 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 7.761 seconds (JVM running for 10.461)
+2023-12-16-21:21:55.492 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:21:55.492 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:21:55.510 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 18 ms
+2023-12-16-21:22:13.341 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-16-21:22:13.342 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@71deec59
+2023-12-16-21:22:13.346 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@71deec59
+2023-12-16-21:22:29.946 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:82>>deleteFlag:0
+2023-12-16-21:22:30.242 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:22:30.244 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:22:30.589 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:23:50.361 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:23:50.407 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:23:50.420 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:23:50.420 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:23:50.505 ERROR [http-nio-9961-exec-5]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy100.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$a3db55c3.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:23:50.523 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:23:50.524 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:23:50.525 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:23:50.525 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:25:53.335 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:25:53.336 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-21:25:53.340 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-16-21:25:58.372 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 17132 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:25:58.376 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:25:58.377 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:25:58.945 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:25:58.948 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:25:58.972 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-16-21:25:59.227 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:25:59.564 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:25:59.572 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:25:59.572 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:25:59.572 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:25:59.654 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:25:59.654 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1225 ms
+2023-12-16-21:25:59.959 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:25:59.967 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:26:00.068 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:26:00.414 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:26:00.463 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:26:00.639 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:26:00.683 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:26:00.686 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.883 seconds (JVM running for 3.599)
+2023-12-16-21:26:06.223 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:26:06.223 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:26:06.227 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2023-12-16-21:26:06.238 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:26:06.278 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:26:06.362 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:26:06.363 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:26:06.554 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:26:06.554 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:26:06.642 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$2b9868f5.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:26:06.647 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:26:06.648 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:26:06.649 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:26:06.649 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:27:01.647 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:27:01.648 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-21:27:01.649 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-16-21:27:06.454 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 17016 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:27:06.457 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:27:06.458 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:27:06.981 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:27:06.983 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:27:07.007 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-16-21:27:07.256 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:27:07.590 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:27:07.598 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:27:07.598 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:27:07.598 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:27:07.676 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:27:07.676 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1174 ms
+2023-12-16-21:27:07.990 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:27:07.998 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:27:08.085 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:27:08.430 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:27:08.479 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:27:08.652 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:27:08.698 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:27:08.701 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.789 seconds (JVM running for 3.517)
+2023-12-16-21:27:12.332 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:27:12.333 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:27:12.337 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2023-12-16-21:27:12.347 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:27:12.387 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:27:12.473 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:27:12.474 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:27:12.663 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:27:12.664 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:27:12.752 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$b46d2b62.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:27:12.758 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:27:12.758 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:27:12.759 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:27:12.760 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:30:59.602 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:30:59.602 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-21:30:59.603 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-16-21:31:04.317 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 16980 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:31:04.321 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:31:04.321 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:31:04.833 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:31:04.836 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:31:04.861 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-16-21:31:05.113 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:31:05.437 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:31:05.445 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:31:05.445 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:31:05.445 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:31:05.522 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:31:05.522 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1158 ms
+2023-12-16-21:31:05.821 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:31:05.829 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:31:05.919 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:31:06.268 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:31:06.322 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:31:06.529 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:31:06.573 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:31:06.575 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.778 seconds (JVM running for 3.49)
+2023-12-16-21:31:11.080 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:31:11.081 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:31:11.085 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2023-12-16-21:31:11.096 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:31:11.136 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:31:11.222 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:31:11.223 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:31:11.416 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:31:11.417 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:31:11.464 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-21:31:11.464 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-21:31:11.464 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-21:31:11.464 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-21:31:11.464 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-21:31:11.498 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$a3db55c3.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:31:11.504 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:31:11.504 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:31:11.506 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:31:11.506 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:45:31.370 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:45:31.371 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-21:45:31.372 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-16-21:45:35.605 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 16756 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:45:35.609 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:45:35.609 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:45:36.143 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:45:36.145 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:45:36.169 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-16-21:45:36.428 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:45:36.755 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:45:36.763 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:45:36.763 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:45:36.763 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:45:36.841 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:45:36.842 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1185 ms
+2023-12-16-21:45:37.156 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:45:37.166 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:45:37.249 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:45:37.595 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:45:37.643 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:45:37.819 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:45:37.864 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:45:37.867 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.781 seconds (JVM running for 3.543)
+2023-12-16-21:45:51.390 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:45:51.391 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:45:51.395 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2023-12-16-21:45:51.407 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:45:51.447 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:45:51.533 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:45:51.535 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:45:51.728 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:45:51.729 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:45:51.776 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-21:45:51.776 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-21:45:51.776 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-21:45:51.776 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-21:45:51.776 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-21:45:51.811 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$dfb95499.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:45:51.816 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:45:51.816 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:45:51.817 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:45:51.817 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:52:17.894 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:52:17.895 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:52:17.896 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:52:17.896 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:52:17.897 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-21:52:17.897 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-21:52:17.898 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-21:52:17.898 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-21:52:17.898 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null
+2023-12-16-21:52:17.899 ERROR [http-nio-9961-exec-2]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:119)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy87.userList(Unknown Source)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.usetList(BlogUserServiceImpl.java:199)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$dfb95499.usetList(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.getAlluser(BlogUserController.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-16-21:52:17.899 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:52:17.900 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:52:17.901 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:52:17.901 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:55:17.860 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:55:17.860 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-16-21:55:17.862 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-16-21:55:22.491 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 15564 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-16-21:55:22.495 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-16-21:55:22.496 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-16-21:55:23.105 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-16-21:55:23.107 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-16-21:55:23.137 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2023-12-16-21:55:23.468 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-16-21:55:23.838 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-16-21:55:23.846 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:55:23.846 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-16-21:55:23.847 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-16-21:55:23.933 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-16-21:55:23.933 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1382 ms
+2023-12-16-21:55:24.258 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-16-21:55:24.266 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-16-21:55:24.359 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-16-21:55:24.737 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-16-21:55:24.793 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-16-21:55:25.022 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-16-21:55:25.066 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-16-21:55:25.071 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.146 seconds (JVM running for 3.911)
+2023-12-16-21:55:45.623 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16-21:55:45.624 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-16-21:55:45.630 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 6 ms
+2023-12-16-21:55:45.641 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:55:45.683 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18300325861
+2023-12-16-21:55:45.776 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-16-21:55:45.777 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-16-21:55:45.987 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3MzY1NDksImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Hk-rWRGrqvUOaEGXKjnrlms0sFQI5QiPQlsc1TRUYJA
+2023-12-16-21:55:45.987 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18300325861, userName=超级管理员, userId=35}
+2023-12-16-21:55:46.059 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:160>>pageNum:1
+2023-12-16-21:55:46.060 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:161>>pageSize:10
+2023-12-16-21:55:46.060 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:162>>userName:null
+2023-12-16-21:55:46.060 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:163>>userPhone:null
+2023-12-16-21:55:46.060 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.controller.BlogUserController:164>>deleted:null

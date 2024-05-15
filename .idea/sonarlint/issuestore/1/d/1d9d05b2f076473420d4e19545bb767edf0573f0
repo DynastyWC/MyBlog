@@ -1,0 +1,15 @@
+
+V
+java:S1118":Add a private constructor to hide the implicit public one.(©œªp8—Ğş´Ç1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ØñÏ8˜Ğş´Ç1
+H
+java:S1481&"+Remove this unused "result" local variable.(ğ”Ìæ8šĞş´Ç1
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(Ãü–…8›Ğş´Ç1
+T	java:S106-"9Replace this use of System.out or System.err by a logger.(™³à8›Ğş´Ç1
+T	java:S106."9Replace this use of System.out or System.err by a logger.(’¾æ8›Ğş´Ç1
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ª›ğºüÿÿÿÿ8œĞş´Ç1
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(Ãº‹Ó8œĞş´Ç1
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(Ó³¾üÿÿÿÿ8œĞş´Ç1
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(¹ÖÄ8œĞş´Ç1
+asecrets:S6336"<Make sure this Alibaba Cloud Access Key ID is not disclosed.(·õ¹ñùÿÿÿÿ8çÄÛ´Ç1
+esecrets:S6336"@Make sure this Alibaba Cloud Access Key Secret is not disclosed.(øœ°°üÿÿÿÿ8èÄÛ´Ç1

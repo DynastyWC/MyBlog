@@ -1,0 +1,24 @@
+2023-12-19-17:02:33.988 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-19-17:02:33.990 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@779fa0e1
+2023-12-19-17:02:33.996 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@779fa0e1
+2023-12-19-17:03:27.890 INFO [http-nio-9961-exec-8]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:81>>deleteFlag:0
+2023-12-19-17:03:27.892 INFO [http-nio-9961-exec-8]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:101>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5ODAyMDcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzNCIsInVzZXJOYW1lIjoi546L5pydIiwidXNlcklkIjozN319.T9sLCMPk1IYjfjpqFz6LwHAU2On1gHMmVvtJ_360D6g
+2023-12-19-17:10:11.223 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:81>>deleteFlag:0
+2023-12-19-17:10:11.225 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:101>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5ODA2MTEsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2MSIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNX19.Sk5sZCCde3gIt5H_GehBE5Xg057Kr5SPYC4-O2u01d4
+2023-12-19-17:13:19.595 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:23>>公共字段自动填充【insert】
+2023-12-19-17:13:19.596 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:24>>org.apache.ibatis.reflection.MetaObject@3222373f
+2023-12-19-17:13:19.596 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:28>>metaObject:org.apache.ibatis.reflection.MetaObject@3222373f
+2023-12-19-17:13:23.340 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:81>>deleteFlag:0
+2023-12-19-17:13:23.342 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:101>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI5ODA4MDMsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODMwMDMyNTg2NiIsInVzZXJOYW1lIjoi55O255O25a2QIiwidXNlcklkIjozOH19.4H95PA2CnyMfCXrz_jlKr2NjqKqXd7NHWGFR1i2-pWU

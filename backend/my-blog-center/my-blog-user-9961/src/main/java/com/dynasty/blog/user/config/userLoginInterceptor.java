@@ -1,7 +1,7 @@
 package com.dynasty.blog.user.config;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.dynasty.blog.user.DTO.UserDTO;
+import com.dynasty.blog.user.entity.DTO.UserDTO;
 import com.dynasty.blog.user.utils.JwtUtil;
 import com.dynasty.blog.user.utils.UserHolder;
 import com.kgkt.tust.common.exception.CodeEnum;

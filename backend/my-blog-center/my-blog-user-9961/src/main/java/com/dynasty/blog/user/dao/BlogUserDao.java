@@ -1,12 +1,10 @@
 package com.dynasty.blog.user.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.dynasty.blog.user.DTO.UserDTO;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import lombok.extern.slf4j.Slf4j;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

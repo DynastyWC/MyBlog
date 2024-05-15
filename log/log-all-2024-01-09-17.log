@@ -1,0 +1,172 @@
+2024-01-09-17:10:20.360 INFO [MessageBroker-1]-
+        org.springframework.web.socket.config.WebSocketMessageBrokerStats:126>>WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2024-01-09-17:34:52.030 INFO [http-nio-9961-exec-2]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09-17:34:52.031 INFO [http-nio-9961-exec-2]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2024-01-09-17:34:52.035 INFO [http-nio-9961-exec-2]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 4 ms
+2024-01-09-17:38:47.398 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2024-01-09-17:40:20.368 INFO [MessageBroker-8]-
+        org.springframework.web.socket.config.WebSocketMessageBrokerStats:126>>WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 42], outboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 11], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 75]
+2024-01-09-17:51:24.473 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopping...
+2024-01-09-17:51:24.473 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-09-17:51:24.473 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopped.
+2024-01-09-17:51:24.474 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'brokerChannelExecutor'
+2024-01-09-17:51:24.474 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2024-01-09-17:51:24.475 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2024-01-09-17:51:24.476 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientInboundChannelExecutor'
+2024-01-09-17:51:24.476 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2024-01-09-17:51:24.477 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2024-01-09-17:51:29.284 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 20416 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2024-01-09-17:51:29.288 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2024-01-09-17:51:29.288 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2024-01-09-17:51:29.873 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-09-17:51:29.875 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-09-17:51:29.902 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2024-01-09-17:51:30.204 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-09-17:51:30.599 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2024-01-09-17:51:30.607 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2024-01-09-17:51:30.608 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2024-01-09-17:51:30.608 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-01-09-17:51:30.697 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2024-01-09-17:51:30.698 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1353 ms
+2024-01-09-17:51:31.023 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2024-01-09-17:51:31.030 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2024-01-09-17:51:31.117 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2024-01-09-17:51:31.429 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'clientInboundChannelExecutor'
+2024-01-09-17:51:31.434 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'clientOutboundChannelExecutor'
+2024-01-09-17:51:31.440 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'messageBrokerTaskScheduler'
+2024-01-09-17:51:31.475 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'brokerChannelExecutor'
+2024-01-09-17:51:31.680 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2024-01-09-17:51:31.939 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>Starting...
+2024-01-09-17:51:31.940 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-09-17:51:31.940 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>Started.
+2024-01-09-17:51:31.947 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2024-01-09-17:51:31.990 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2024-01-09-17:51:31.993 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.306 seconds (JVM running for 4.146)
+2024-01-09-17:52:03.243 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09-17:52:03.243 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2024-01-09-17:52:03.248 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 5 ms
+2024-01-09-17:52:31.483 INFO [MessageBroker-4]-
+        org.springframework.web.socket.config.WebSocketMessageBrokerStats:126>>WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 6]
+2024-01-09-17:57:57.655 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopping...
+2024-01-09-17:57:57.655 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-09-17:57:57.655 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopped.
+2024-01-09-17:57:57.657 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'brokerChannelExecutor'
+2024-01-09-17:57:57.657 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2024-01-09-17:57:57.658 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2024-01-09-17:57:57.659 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientInboundChannelExecutor'
+2024-01-09-17:57:57.659 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2024-01-09-17:57:57.661 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2024-01-09-17:58:04.750 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 3504 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2024-01-09-17:58:04.753 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2024-01-09-17:58:04.754 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2024-01-09-17:58:05.329 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-09-17:58:05.331 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-09-17:58:05.356 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2024-01-09-17:58:05.648 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-09-17:58:05.982 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2024-01-09-17:58:05.990 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2024-01-09-17:58:05.990 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2024-01-09-17:58:05.990 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-01-09-17:58:06.073 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2024-01-09-17:58:06.074 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1268 ms
+2024-01-09-17:58:06.391 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2024-01-09-17:58:06.398 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2024-01-09-17:58:06.485 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2024-01-09-17:58:06.789 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'clientInboundChannelExecutor'
+2024-01-09-17:58:06.791 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'clientOutboundChannelExecutor'
+2024-01-09-17:58:06.795 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'messageBrokerTaskScheduler'
+2024-01-09-17:58:06.824 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'brokerChannelExecutor'
+2024-01-09-17:58:06.975 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2024-01-09-17:58:07.201 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>Starting...
+2024-01-09-17:58:07.201 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-09-17:58:07.202 INFO [main]-
+        org.springframework.core.log.CompositeLog:137>>Started.
+2024-01-09-17:58:07.208 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2024-01-09-17:58:07.252 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2024-01-09-17:58:07.254 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.046 seconds (JVM running for 3.845)
+2024-01-09-17:58:16.156 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09-17:58:16.157 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2024-01-09-17:58:16.162 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 5 ms
+2024-01-09-17:59:06.839 INFO [MessageBroker-6]-
+        org.springframework.web.socket.config.WebSocketMessageBrokerStats:126>>WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 12]

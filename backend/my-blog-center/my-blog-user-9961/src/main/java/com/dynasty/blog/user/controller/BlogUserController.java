@@ -1,6 +1,6 @@
 package com.dynasty.blog.user.controller;
 
-import com.dynasty.blog.user.DTO.UserDTO;
+import com.dynasty.blog.user.entity.DTO.UserDTO;
 import com.dynasty.blog.user.entity.BlogUserEntity;
 import com.dynasty.blog.user.entity.PageBean;
 import com.dynasty.blog.user.service.BlogUserService;
@@ -30,7 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @email study_wc@163.com
  * @date 2023-12-11 22:49:03
  */
-@CrossOrigin(origins = "http://localhost:8082", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:5173", maxAge = 3600)
 @Slf4j
 @RestController
 @RequestMapping("/user")
@@ -95,11 +95,19 @@ public class BlogUserController {
    * @author dynasty
    * @description 校验用户是否注册
    */
-@GetMapping("/checkUser")
-public R checkUser(String userPhone){
-  UserDTO loginUser = blogUserService.checkUser(userPhone);
-  return R.ok().put("loginUser", loginUser);
-}
+  @GetMapping("/checkUser")
+  public R checkUser(String userPhone) {
+    if (userPhone != null && !userPhone.isEmpty()) {
+      UserDTO loginUser = blogUserService.checkUser(userPhone);
+      if (loginUser != null) {
+        return R.ok().put("loginUser", loginUser);
+      } else {
+        return R.error("用户不存在或其他错误消息");
+      }
+    } else {
+      return R.error("用户账号错误!");
+    }
+  }
   /**
    * @author dynasty
    * @description 用户密码更新接口
