@@ -24,8 +24,8 @@ public class OssUtils {
   // 填写Bucket名称，例如examplebucket。
   private static final  String BUCKETNAME = "my-blog-dynasty";
   // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。
-  private static final String OSS_ACCESS_KEY_ID = "LTAI5tQoRzpXwTkRxRQgiY3b";
-  private static final String OSS_ACCESS_KEY_SECRET = "TfwaE2MtOTgyWEACirUscWhN5X3JKW";
+  private static final String OSS_ACCESS_KEY_ID = "";
+  private static final String OSS_ACCESS_KEY_SECRET = "";
   public static  String OssUpload(  String objectName, InputStream in) {
     // 创建OSSClient实例。
     OSS ossClient = new OSSClientBuilder().build(ENDPOINT, OSS_ACCESS_KEY_ID,
