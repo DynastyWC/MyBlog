@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="my-blog-gateway-9992" />
+        <module name="my-blog-user-9961" />
+        <module name="renren-generator" />
+        <module name="my-blog-commons" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="my-blog-center" target="11" />
+      <module name="my-blog-commons" target="11" />
+      <module name="my-blog-gateway-9992" target="11" />
+      <module name="my-blog-user-9961" target="11" />
+      <module name="renren-generator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="renren-generator" options="-parameters" />
+    </option>
+  </component>
+</project>

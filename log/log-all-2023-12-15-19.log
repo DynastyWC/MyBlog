@@ -1,0 +1,530 @@
+2023-12-15-19:02:57.636 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:02:57.637 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-15-19:02:57.640 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-15-19:03:02.238 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 12612 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-15-19:03:02.241 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-15-19:03:02.242 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-15-19:03:02.740 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-15-19:03:02.742 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-15-19:03:02.770 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-15-19:03:03.048 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15-19:03:03.385 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-15-19:03:03.393 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:03:03.393 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-15-19:03:03.393 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-15-19:03:03.468 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-15-19:03:03.469 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1185 ms
+2023-12-15-19:03:03.837 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-15-19:03:03.847 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-15-19:03:03.942 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-15-19:03:04.264 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:03:04.311 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-15-19:03:04.448 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:03:04.497 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-15-19:03:04.499 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.784 seconds (JVM running for 3.468)
+2023-12-15-19:04:46.925 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15-19:04:46.926 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-15-19:04:46.931 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 5 ms
+2023-12-15-19:04:47.372 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.dynasty.blog.user.entity.BlogUserEntity.getDeleted()" because "user" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.dynasty.blog.user.entity.BlogUserEntity.getDeleted()" because "user" is null
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.dologin(BlogUserServiceImpl.java:74)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$94cff3e.dologin(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.dologin(BlogUserController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-15-19:04:47.378 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-15-19:07:43.000 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:07:43.001 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-15-19:07:43.003 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-15-19:07:47.305 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 16840 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-15-19:07:47.309 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-15-19:07:47.310 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-15-19:07:47.849 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-15-19:07:47.852 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-15-19:07:47.875 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-15-19:07:48.125 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15-19:07:48.483 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-15-19:07:48.492 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:07:48.493 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-15-19:07:48.493 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-15-19:07:48.570 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-15-19:07:48.570 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1213 ms
+2023-12-15-19:07:48.873 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-15-19:07:48.882 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-15-19:07:48.968 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-15-19:07:49.293 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:07:49.343 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-15-19:07:49.487 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:07:49.532 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-15-19:07:49.534 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.775 seconds (JVM running for 3.464)
+2023-12-15-19:07:54.225 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15-19:07:54.226 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-15-19:07:54.232 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 6 ms
+2023-12-15-19:07:54.649 ERROR [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:175>>Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.dynasty.blog.user.entity.BlogUserEntity.getDeleted()" because "user" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.dynasty.blog.user.entity.BlogUserEntity.getDeleted()" because "user" is null
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl.dologin(BlogUserServiceImpl.java:74)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$FastClassBySpringCGLIB$$813abc55.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.dynasty.blog.user.service.impl.BlogUserServiceImpl$$EnhancerBySpringCGLIB$$5bcfe2b2.dologin(<generated>)
+	at com.dynasty.blog.user.controller.BlogUserController.dologin(BlogUserController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-15-19:07:54.654 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-15-19:08:06.322 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:08:06.323 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-15-19:08:06.328 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-15-19:08:10.768 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 7532 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-15-19:08:10.771 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-15-19:08:10.772 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-15-19:08:11.281 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-15-19:08:11.284 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-15-19:08:11.306 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2023-12-15-19:08:11.557 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15-19:08:11.875 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-15-19:08:11.883 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:08:11.883 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-15-19:08:11.883 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-15-19:08:11.958 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-15-19:08:11.958 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1143 ms
+2023-12-15-19:08:12.257 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-15-19:08:12.266 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-15-19:08:12.354 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-15-19:08:12.672 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:08:12.722 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-15-19:08:12.862 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:08:12.906 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-15-19:08:12.909 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.707 seconds (JVM running for 3.403)
+2023-12-15-19:08:16.064 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15-19:08:16.065 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-15-19:08:16.071 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 6 ms
+2023-12-15-19:11:28.278 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:11:28.279 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-15-19:11:28.284 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-15-19:11:32.751 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 3064 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-15-19:11:32.756 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-15-19:11:32.756 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-15-19:11:33.305 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-15-19:11:33.307 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-15-19:11:33.329 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2023-12-15-19:11:33.580 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15-19:11:33.903 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-15-19:11:33.910 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:11:33.911 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-15-19:11:33.911 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-15-19:11:33.987 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-15-19:11:33.987 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1179 ms
+2023-12-15-19:11:34.290 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-15-19:11:34.297 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-15-19:11:34.385 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-15-19:11:34.712 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:11:34.760 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-15-19:11:34.905 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:11:34.945 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-15-19:11:34.947 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.754 seconds (JVM running for 3.397)
+2023-12-15-19:12:04.375 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15-19:12:04.376 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-15-19:12:04.379 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 3 ms
+2023-12-15-19:13:37.050 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:78>>deleteFlag:0
+2023-12-15-19:13:37.346 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-15-19:13:37.348 INFO [http-nio-9961-exec-3]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-15-19:13:37.729 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:96>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:14:07.845 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:14:07.873 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:14:08.149 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:14:08.150 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:14:08.281 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=3}
+2023-12-15-19:14:08.310 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:14:08.310 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@7bcf8f93
+2023-12-15-19:14:24.864 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:14:24.867 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-15-19:14:24.877 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-15-19:15:39.780 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 13552 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-15-19:15:39.784 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-15-19:15:39.785 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-15-19:15:40.352 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-15-19:15:40.354 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-15-19:15:40.383 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2023-12-15-19:15:40.650 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-15-19:15:40.976 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-15-19:15:40.985 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:15:40.986 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-15-19:15:40.987 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-15-19:15:41.064 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-15-19:15:41.065 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1227 ms
+2023-12-15-19:15:41.375 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-15-19:15:41.381 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-15-19:15:41.468 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-15-19:15:41.789 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-15-19:15:41.837 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-15-19:15:41.993 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-15-19:15:42.041 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-15-19:15:42.043 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 2.806 seconds (JVM running for 3.478)
+2023-12-15-19:16:04.668 INFO [http-nio-9961-exec-2]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-15-19:16:04.668 INFO [http-nio-9961-exec-2]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-15-19:16:04.671 INFO [http-nio-9961-exec-2]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 3 ms
+2023-12-15-19:16:04.683 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:04.726 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:16:04.815 INFO [http-nio-9961-exec-2]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-15-19:16:04.816 INFO [http-nio-9961-exec-2]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-15-19:16:05.019 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:05.019 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:16:05.137 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userName=dynasty, userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=3}
+2023-12-15-19:16:05.181 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:16:05.181 INFO [http-nio-9961-exec-2]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@748bf34e
+2023-12-15-19:16:17.595 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:17.596 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:16:17.597 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:17.597 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:16:17.599 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=3}
+2023-12-15-19:16:17.601 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:16:17.601 INFO [http-nio-9961-exec-3]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@a0c5dc3
+2023-12-15-19:16:46.228 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:46.229 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:16:46.230 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:16:46.231 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:16:46.232 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=1}
+2023-12-15-19:16:46.233 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:16:46.233 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@3c0bfe2f
+2023-12-15-19:17:10.641 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:10.641 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:17:10.642 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:10.642 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:17:10.644 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userEmail=.com, icon=www.888.com, motto=2024我要发大财！！, version=1}
+2023-12-15-19:17:10.645 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:17:10.645 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@49a7624e
+2023-12-15-19:17:17.116 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:17.117 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:17:17.118 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:17.118 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:17:17.119 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userEmail=.com, icon=www.888.com, motto=2024我要发大财！！, version=2}
+2023-12-15-19:17:17.120 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:17:17.121 INFO [http-nio-9961-exec-5]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@806e5fc
+2023-12-15-19:17:32.633 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:32.633 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:17:32.634 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:32.634 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:17:32.636 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userName=dynasty, userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=3}
+2023-12-15-19:17:32.637 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:17:32.637 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@4c36c7b5
+2023-12-15-19:17:35.356 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:35.356 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:17:35.357 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:17:35.357 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:17:35.358 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userName=dynasty, userEmail=17789944002@qq.com, icon=www.888.com, motto=2024我要发大财！！, version=3}
+2023-12-15-19:17:35.359 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:17:35.360 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@77e792fb
+2023-12-15-19:23:33.655 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:23:33.656 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.userLoginInterceptor:52>>userPhone:18738805033
+2023-12-15-19:23:33.657 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.userLoginInterceptor:54>>redisToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI2NDI0MTcsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMyIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjoyNH19.toXEbrlbt0OZE7VfsFCX34reZVukzKJmBM6w3dxVAvU
+2023-12-15-19:23:33.657 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.userLoginInterceptor:61>>map:{userPhone=18738805033, userName=超级管理员, userId=24}
+2023-12-15-19:23:33.659 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:110>>userInfoList:{userName=dynasty, userEmail=com, icon=www.888.com, motto=2024我要发大财！！, version=4}
+2023-12-15-19:23:33.660 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:37>>公共字段，自动填充【update】
+2023-12-15-19:23:33.660 INFO [http-nio-9961-exec-9]-
+        com.dynasty.blog.user.config.MyMetaObjecthandler:38>>org.apache.ibatis.reflection.MetaObject@4aeb834c

@@ -1,0 +1,76 @@
+2024-01-09-19:00:47.875 INFO [clientInboundChannel-50]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:00:54.088 INFO [clientInboundChannel-53]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在干什么
+2024-01-09-19:01:04.736 INFO [clientInboundChannel-56]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:我在吃饭
+2024-01-09-19:01:23.263 INFO [clientInboundChannel-50]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:年后
+2024-01-09-19:01:28.195 INFO [clientInboundChannel-53]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:01:55.082 INFO [clientInboundChannel-49]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:01:59.630 INFO [clientInboundChannel-50]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:年后
+2024-01-09-19:02:19.091 INFO [clientInboundChannel-61]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:03:32.976 INFO [clientInboundChannel-71]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好啊
+2024-01-09-19:04:58.299 INFO [clientInboundChannel-83]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:年后
+2024-01-09-19:05:52.294 INFO [clientInboundChannel-79]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:09:34.209 INFO [clientInboundChannel-99]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:年后
+2024-01-09-19:09:39.629 INFO [clientInboundChannel-102]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在嘎撒大顶顶顶顶顶
+2024-01-09-19:11:09.456 INFO [clientInboundChannel-114]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:11:29.360 INFO [clientInboundChannel-109]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:年后
+2024-01-09-19:11:35.129 INFO [clientInboundChannel-113]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好大手术室
+2024-01-09-19:12:16.380 INFO [clientInboundChannel-121]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:撒大顶顶顶顶顶大大大的
+2024-01-09-19:16:58.120 INFO [clientInboundChannel-132]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:17:07.429 INFO [clientInboundChannel-135]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在干什么
+2024-01-09-19:19:00.397 INFO [clientInboundChannel-147]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:19:07.921 INFO [clientInboundChannel-150]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在干嘛
+2024-01-09-19:21:14.957 INFO [clientInboundChannel-162]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:hello
+2024-01-09-19:21:43.158 INFO [clientInboundChannel-157]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:hello
+2024-01-09-19:22:05.557 INFO [MessageBroker-7]-
+        org.springframework.web.socket.config.WebSocketMessageBrokerStats:126>>WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 17 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(17)-CONNECTED(17)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 237], outboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 62], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 429]
+2024-01-09-19:22:38.123 INFO [clientInboundChannel-169]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在干嘛
+2024-01-09-19:25:08.374 INFO [clientInboundChannel-181]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你好
+2024-01-09-19:25:12.900 INFO [clientInboundChannel-184]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:你在啊大大大
+2024-01-09-19:25:18.124 INFO [clientInboundChannel-187]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:我在阿诗丹顿多多多多多多多多多多多多多多多多多多多多多多多多多
+2024-01-09-19:25:29.497 INFO [clientInboundChannel-174]-
+        com.dynasty.blog.user.controller.WebSocketController:28>>reply:阿诗丹顿多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多
+2024-01-09-19:31:21.670 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopping...
+2024-01-09-19:31:21.670 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-09-19:31:21.670 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopped.
+2024-01-09-19:31:21.671 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'brokerChannelExecutor'
+2024-01-09-19:31:21.671 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2024-01-09-19:31:21.673 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2024-01-09-19:31:21.673 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientInboundChannelExecutor'
+2024-01-09-19:31:21.674 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2024-01-09-19:31:21.675 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed

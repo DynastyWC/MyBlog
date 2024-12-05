@@ -1,0 +1,90 @@
+2023-12-18-15:02:54.546 WARN [http-nio-9961-exec-7]-
+        org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:199>>Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userPhone' is not present]
+2023-12-18-15:02:54.579 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-18-15:13:15.472 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18-15:13:15.473 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2023-12-18-15:13:15.532 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed
+2023-12-18-15:13:21.079 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:55>>Starting MyBlogUser9961Application on Dynasty with PID 15792 (F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes started by 17789 in F:\MyPlayGround\MyBlog\MyBlog)
+2023-12-18-15:13:21.084 DEBUG [main]-
+        org.springframework.boot.StartupInfoLogger:56>>Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2023-12-18-15:13:21.085 INFO [main]-
+        org.springframework.boot.SpringApplication:651>>No active profile set, falling back to default profiles: default
+2023-12-18-15:13:21.890 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:249>>Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18-15:13:21.892 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:127>>Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-18-15:13:21.922 INFO [main]-
+        org.springframework.data.repository.config.RepositoryConfigurationDelegate:187>>Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2023-12-18-15:13:22.289 INFO [main]-
+        org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330>>Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-18-15:13:22.746 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:92>>Tomcat initialized with port(s): 9961 (http)
+2023-12-18-15:13:22.755 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing ProtocolHandler ["http-nio-9961"]
+2023-12-18-15:13:22.756 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting service [Tomcat]
+2023-12-18-15:13:22.756 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-12-18-15:13:22.868 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring embedded WebApplicationContext
+2023-12-18-15:13:22.869 INFO [main]-
+        org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:284>>Root WebApplicationContext: initialization completed in 1706 ms
+2023-12-18-15:13:23.345 INFO [main]-
+        com.dynasty.blog.user.config.MyConfig:22>>进入了Myconfig
+2023-12-18-15:13:23.354 INFO [main]-
+        com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:55>>Init DruidDataSource
+2023-12-18-15:13:23.466 INFO [main]-
+        com.alibaba.druid.pool.DruidDataSource:1009>>{dataSource-1} inited
+2023-12-18-15:13:23.925 INFO [main]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171>>Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18-15:13:23.999 INFO [main]-
+        org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:54>>Adding welcome page: class path resource [static/index.html]
+2023-12-18-15:13:24.300 INFO [main]-
+        org.apache.juli.logging.DirectJDKLog:173>>Starting ProtocolHandler ["http-nio-9961"]
+2023-12-18-15:13:24.359 INFO [main]-
+        org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204>>Tomcat started on port(s): 9961 (http) with context path ''
+2023-12-18-15:13:24.363 INFO [main]-
+        org.springframework.boot.StartupInfoLogger:61>>Started MyBlogUser9961Application in 3.906 seconds (JVM running for 4.893)
+2023-12-18-15:14:07.178 INFO [http-nio-9961-exec-1]-
+        org.apache.juli.logging.DirectJDKLog:173>>Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-18-15:14:07.178 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:525>>Initializing Servlet 'dispatcherServlet'
+2023-12-18-15:14:07.178 INFO [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.FrameworkServlet:547>>Completed initialization in 0 ms
+2023-12-18-15:14:07.244 WARN [http-nio-9961-exec-1]-
+        org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:199>>Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userPhone' is not present]
+2023-12-18-15:14:07.244 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-18-15:16:26.549 WARN [http-nio-9961-exec-4]-
+        org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:199>>Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userPhone' is not present]
+2023-12-18-15:16:26.550 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-18-15:18:40.851 WARN [http-nio-9961-exec-7]-
+        org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:199>>Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userPhone' is not present]
+2023-12-18-15:18:40.852 INFO [http-nio-9961-exec-7]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-18-15:20:40.796 WARN [http-nio-9961-exec-10]-
+        org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:199>>Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userPhone' is not present]
+2023-12-18-15:20:40.796 INFO [http-nio-9961-exec-10]-
+        com.dynasty.blog.user.config.userLoginInterceptor:42>>token:null
+2023-12-18-15:21:08.564 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-15:21:08.927 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.EpollProvider:68>>Starting without optional epoll library
+2023-12-18-15:21:08.928 INFO [http-nio-9961-exec-1]-
+        io.lettuce.core.KqueueProvider:70>>Starting without optional kqueue library
+2023-12-18-15:21:09.407 INFO [http-nio-9961-exec-1]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI4ODc2NjgsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.T26uH_qWMIpvisB4L9sa8Rj5TN9K9Rj_y_HTHWGaV3o
+2023-12-18-15:27:11.005 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-15:27:11.007 INFO [http-nio-9961-exec-4]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI4ODgwMzEsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.nfnYxuTg_GiJwqWvt4_qGEjOe0fjAuJ5tWPRKDM9Dw8
+2023-12-18-15:30:21.817 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:80>>deleteFlag:0
+2023-12-18-15:30:21.818 INFO [http-nio-9961-exec-6]-
+        com.dynasty.blog.user.service.impl.BlogUserServiceImpl:100>>token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI4ODgyMjEsImNsYWltcyI6eyJ1c2VyUGhvbmUiOiIxODczODgwNTAzMCIsInVzZXJOYW1lIjoi6LaF57qn566h55CG5ZGYIiwidXNlcklkIjozNn19.8bDpDDsaNMx_lnS47bHHM2k8sGPiO-_yH7FUx93hErw

@@ -1,0 +1,83 @@
+2023-12-15-14:17:11.871 ERROR [main]-
+        org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40>>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field blogUserService in com.dynasty.blog.user.controller.BlogUserController required a bean of type 'com.dynasty.blog.user.dao.BlogUserDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.dynasty.blog.user.dao.BlogUserDao' in your configuration.
+
+2023-12-15-14:17:20.625 ERROR [main]-
+        org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40>>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field blogUserService in com.dynasty.blog.user.controller.BlogUserController required a bean of type 'com.dynasty.blog.user.dao.BlogUserDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.dynasty.blog.user.dao.BlogUserDao' in your configuration.
+
+2023-12-15-14:18:52.717 ERROR [main]-
+        org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40>>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'myMetaObjecthandler', defined in com.dynasty.blog.user.MyBlogUser9961Application, could not be registered. A bean with that name has already been defined in file [F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes\com\dynasty\blog\user\config\MyMetaObjecthandler.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-15-14:22:24.571 ERROR [main]-
+        org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40>>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'myMetaObjecthandler', defined in class path resource [com/dynasty/blog/user/config/MyConfig.class], could not be registered. A bean with that name has already been defined in file [F:\MyPlayGround\MyBlog\MyBlog\backend\my-blog-center\my-blog-user-9961\target\classes\com\dynasty\blog\user\config\MyMetaObjecthandler.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-15-14:23:02.105 ERROR [main]-
+        org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40>>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9961 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9961 or configure this application to listen on another port.
+

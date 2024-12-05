@@ -1,0 +1,7 @@
+---Student---
+name=王朝
+hobbit=pingpang
+age=24
+---Teacher---
+name=杨丽萍
+xueke=数学

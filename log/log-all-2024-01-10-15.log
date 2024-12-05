@@ -1,0 +1,18 @@
+2024-01-10-15:00:36.007 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopping...
+2024-01-10-15:00:36.008 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2024-01-10-15:00:36.008 INFO [SpringContextShutdownHook]-
+        org.springframework.core.log.CompositeLog:137>>Stopped.
+2024-01-10-15:00:36.010 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'brokerChannelExecutor'
+2024-01-10-15:00:36.011 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2024-01-10-15:00:36.012 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2024-01-10-15:00:36.013 INFO [SpringContextShutdownHook]-
+        org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208>>Shutting down ExecutorService 'clientInboundChannelExecutor'
+2024-01-10-15:00:36.013 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2174>>{dataSource-1} closing ...
+2024-01-10-15:00:36.014 INFO [SpringContextShutdownHook]-
+        com.alibaba.druid.pool.DruidDataSource:2247>>{dataSource-1} closed

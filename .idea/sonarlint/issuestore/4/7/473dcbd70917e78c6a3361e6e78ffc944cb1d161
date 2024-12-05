@@ -1,0 +1,10 @@
+
+h	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾¬¾È1
+r	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ôÂûÿÿÿÿ8Ó¬¾È1
+s	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÙ±Ìüÿÿÿÿ8Õ¬¾È1
+E
+java:S5411W"(Use a primitive boolean expression here.(ì€ÜÈ8ç¬¾È1
+S
+java:S1874v"1Remove this use of "mapToBean"; it is deprecated.(ô‡üúÿÿÿÿ8Ì¯¾È1
+r
+java:S3252Å"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(çø¤ÿÿÿÿÿ8è¯¾È1
